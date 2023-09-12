@@ -18,7 +18,7 @@ student = {"name": "Jane", "age": 34, "address": "KTM"}
 print(student.keys()) # dict_keys(["name", "age", "address"])
 
 for key in student.keys():
-    print(keys)
+    print(key)
 
 # Looping in dictionary values
 print(student.values()) # ["Jane", 34, "KTM:]
