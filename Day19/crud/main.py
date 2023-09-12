@@ -13,16 +13,25 @@ def inquiry():
 
 
     if selection == "c":
-        create_student()
+        repeat = create_student()
+        inquiry() if repeat else exit_message()
 
     elif selection == "r":
-        read_student()
+        student_id = input("enter the student id: ")
+
+        repeat = read_student(student_id)
+        inquiry() if repeat else exit_message()
 
     elif selection == "u":
-        update_student()
+        student_id = input("enter the student id: ")
+        update_student(student_id)
+
 
     elif selection == "d":
-        delete_student()
+        student_id = input("enter the student id: ")
+        repeat = delete_student(student_id)
+        inquiry() if repeat else exit_message()
+
     else:
         exit_message()
 
