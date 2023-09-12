@@ -1,5 +1,5 @@
 # Exception in Python can be handled using try...except block
- try:
+try:
      num = int(input("Enter a number "))
 except ValueError:
     print("something went wrong")
